@@ -1,12 +1,16 @@
 name: Test Feishu Webhook
 
 on:
+  schedule:
+    - cron: "0 9 * * *"
+      timezone: "Asia/Shanghai"
+
   workflow_dispatch:
 
 jobs:
   send-test-message:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Send test message to Feishu
         env:
