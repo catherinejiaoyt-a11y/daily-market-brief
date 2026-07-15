@@ -2,9 +2,8 @@ name: Daily AI Market Brief
 
 on:
   schedule:
-    - cron: "0 9 * * *"
-      timezone: "Asia/Shanghai"
-
+    - cron: "0 1 * * *"
+     
   workflow_dispatch:
 
 permissions:
